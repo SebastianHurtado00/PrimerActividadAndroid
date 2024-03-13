@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-58dp">
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/appCompatSpinner2"
+        android:layout_width="235dp"
+
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/propietario"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/appCompatSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatSpinner" />
+
+    <EditText
+        android:id="@+id/TextDescripcion"
+        android:layout_width="233dp"
+        android:layout_height="99dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripcion"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextNumeroPlaca"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextNumeroPlaca"
+        app:layout_constraintTop_toBottomOf="@+id/TextNumeroPlaca"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/TextNumeroPlaca"
+        android:layout_width="233dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:hint="Numero de placa"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="236dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="132dp"
+        android:text="Registros de automoviles"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/appCompatSpinner"
+        android:layout_width="235dp"
+        android:layout_height="25dp"
+        android:entries="@array/modelo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SelectColores"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SelectColores"
+        app:layout_constraintTop_toBottomOf="@+id/SelectColores"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/SelectColores"
+        android:layout_width="235dp"
+        android:layout_height="25dp"
+        android:entries="@array/colores_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextDescripcion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/TextDescripcion"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatSpinner2"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="@+id/appCompatSpinner2"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatSpinner2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

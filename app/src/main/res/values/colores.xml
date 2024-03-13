@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colores_array">
+        <item>Selecciona un color</item>
+        <item>Azul</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+    </string-array>
+    
+    <string-array name="modelo">
+        <item>Seleccione el modelo</item>
+        <item>K1 Super</item>
+        <item>Prado 2024</item>
+        <item>CyberTruck</item>
+    </string-array>
+
+    <string-array name="propietario">
+        <item>Propietari@</item>
+        <item>Sebastian Navaja</item>
+        <item>Mariana Navaja</item>
+        <item>Erika hurtado</item>
+    </string-array>
+</resources>
