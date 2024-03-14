@@ -4,69 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="52dp">
+    tools:layout_editor_absoluteY="21dp">
 
     <EditText
         android:id="@+id/TextName"
-        android:layout_width="281dp"
-        android:layout_height="44dp"
-        android:backgroundTint="@color/white"
-        android:hint="Ingrese su nombre"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@android:color/black"
+        android:hint="@string/Ingreso_Usuario"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textPassword"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.432" />
 
     <EditText
         android:id="@+id/textPassword"
         android:layout_width="287dp"
         android:layout_height="48dp"
-        android:backgroundTint="@color/white"
-        android:hint="Ingrese su contraseña"
+        android:backgroundTint="@android:color/background_dark"
+        android:hint="@string/Ingreso_Contraseha"
         android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextName"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintVertical_bias="0.131" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/TextName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnIngresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="201dp"
+        android:layout_height="40dp"
         android:background="@color/design_default_color_primary"
-        android:text="Ingreso"
+        android:text="@string/btnIngreso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword"
-        app:layout_constraintVertical_bias="0.368" />
+        app:layout_constraintVertical_bias="0.21"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="65dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/instagram" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="176dp"
-        android:layout_height="198dp"
+        android:layout_width="65dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/buscar" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="65dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="155dp"
         app:layout_constraintBottom_toTopOf="@+id/TextName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:srcCompat="@drawable/intimidad" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="185dp"
+        android:layout_height="39dp"
+        android:drawableTint="#8DFFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/registro"
+        android:textColor="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

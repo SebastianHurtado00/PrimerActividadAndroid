@@ -11,4 +11,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="Ingreso_Usuario">Ingrese su usuario</string>
+    <string name="Ingreso_Contraseha">Ingrese su contraseña</string>
+    <string name="registro">¿No estas registrado?</string>
+    <string name="btnIngreso">Inicio</string>
+    <string name="seleccionar_color">seleccionar color</string>
 </resources>

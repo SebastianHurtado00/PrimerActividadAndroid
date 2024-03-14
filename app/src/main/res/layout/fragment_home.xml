@@ -4,20 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
     tools:context=".ui.gallery.GalleryFragment"
     tools:layout_editor_absoluteX="-1dp"
     tools:layout_editor_absoluteY="-58dp">
-
-    <EditText
-        android:id="@+id/direccion"
-        android:layout_width="286dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="284dp"
-        android:hint="Ingrese su direccion"
-        app:layout_constraintEnd_toEndOf="@+id/textTitle"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/textTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
     <EditText
         android:id="@+id/telefono"
@@ -25,8 +15,53 @@
         android:layout_height="53dp"
         android:layout_marginTop="364dp"
         android:hint="Ingrese su Telefono"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/background_dark"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/textTitle"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="@+id/textTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <EditText
+        android:id="@+id/Documento"
+        android:layout_width="286dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:hint="Ingrese su Documento"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="286dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="212dp"
+        android:hint="Ingrese su apellido"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/background_dark"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textTitle"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="@+id/textTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="286dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="284dp"
+        android:hint="Ingrese su direccion"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/textTitle"
+        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="@+id/textTitle"
         app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
@@ -36,17 +71,11 @@
         android:layout_height="53dp"
         android:layout_marginTop="132dp"
         android:hint="Ingrese su nombre"
+        android:backgroundTint="@android:color/background_dark"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/textTitle"
-        app:layout_constraintStart_toStartOf="@+id/textTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
-
-    <EditText
-        android:id="@+id/apellido"
-        android:layout_width="286dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="212dp"
-        android:hint="Ingrese su apellido"
-        app:layout_constraintEnd_toEndOf="@+id/textTitle"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="@+id/textTitle"
         app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
@@ -56,36 +85,27 @@
         android:layout_width="227dp"
         android:layout_height="47dp"
         android:text="Registro de Aprendizes"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
 
-    <EditText
-        android:id="@+id/Documento"
-        android:layout_width="286dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="40dp"
-        android:hint="Ingrese su Documento"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Ingresar"
+        android:layout_width="179dp"
+        android:layout_height="53dp"
+        android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/telefono"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telefono"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.322" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
