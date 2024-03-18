@@ -13,6 +13,8 @@
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/appCompatSpinner2"
+        android:background="@color/black"
+        android:alpha="0.7"
         android:layout_width="235dp"
         android:layout_height="25dp"
         android:layout_marginTop="20dp"
@@ -72,6 +74,8 @@
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/appCompatSpinner"
+        android:background="@color/black"
+        android:alpha="0.7"
         android:layout_width="235dp"
         android:layout_height="25dp"
         android:backgroundTint="@android:color/background_dark"
@@ -88,6 +92,8 @@
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/SelectColores"
+        android:background="@color/black"
+        android:alpha="0.7"
         android:layout_width="235dp"
         android:layout_height="25dp"
         android:accessibilityLiveRegion="assertive"
